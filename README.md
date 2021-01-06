@@ -2,7 +2,6 @@
 ```
 const canvas = createCanvas(400, 400);
 const context = canvas.getContext('2d');
-
 document.body.appendChild(canvas);
 
 context.fillStyle = 'green';
