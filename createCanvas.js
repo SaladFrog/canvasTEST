@@ -6,7 +6,7 @@
 function createCanvas(test, settings = {}) {
   //const canvas = document.getElementById("canvas");
   //const context = canvas.getContext("2d");
-  const canvas = createCanvas(400, 400);
+  const canvas = createCanvasElement(400, 400);
   const context = canvas.getContext("2d");
   document.body.appendChild(canvas);
   
