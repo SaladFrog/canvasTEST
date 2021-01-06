@@ -33,7 +33,7 @@ function createCanvas(test, settings = {}) {
     draw();
   }
 
-  function draw(dt = 0) {
+  function draw() {
     drawing({ context, dimensions });
   }
 }
