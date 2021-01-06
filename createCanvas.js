@@ -1,3 +1,8 @@
+/* settings
+* @dimensitons: [int, int]
+* @animate: bool
+* @clear: bool
+/
 function createCanvas(test, settings = {}) {
   const canvas = document.getElementById("canvas");
   const context = canvas.getContext("2d");
@@ -19,5 +24,17 @@ function createCanvas(test, settings = {}) {
   
   function draw(dt = 0) {
     drawing({ context, dimensions });
+  }
+  
+  function clear() {
+    if (!settings.clear) {
+      console.log("do not clear canvas");
+    } else {
+      console.log("clear canvas");
+      context.clearRect(0, 0, width, height);
+    }
+  }
+  function resize() {
+    console.log("TODO: resize module");
   }
 }
