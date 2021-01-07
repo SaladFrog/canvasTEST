@@ -1,11 +1,4 @@
-/* settings
-* @dimensitons: [int, int]
-* @animate: bool
-* @clear: bool
-/
 function createCanvas(test, settings = {}) {
-  //const canvas = document.getElementById("canvas");
-  //const context = canvas.getContext("2d");
   const canvas = createCanvasElement(400, 400);
   const context = canvas.getContext("2d");
   document.body.appendChild(canvas);
